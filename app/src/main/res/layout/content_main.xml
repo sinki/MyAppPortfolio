@@ -1,24 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
+<ScrollView
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main"
+    tools:context=".MainActivity"
+    android:background="#ffdfeaf1">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
-    android:background="#ffdfeaf1"
-    tools:showIn="@layout/activity_main"
-    tools:context=".MainActivity">
 
+   >
 
 
     <TextView
-        android:id="@+id/heading"
+        android:id="@+id/heading_app_portfolio"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/title_screen1"
+        android:text="@string/heading_app_portfolio"
         android:gravity="center"
         android:layout_centerHorizontal="true"
         android:layout_margin="10dp"
@@ -26,81 +31,47 @@
         android:textColor="@android:color/black"/>
 
     <Button
-        android:id="@+id/project_name1"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/heading"
-        android:background="#F08C35"
-        android:text="@string/project_name1"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
-        android:onClick="onProject1Click"/>
+      android:id="@+id/spotifyStreamerButton"
+      style="@style/orangeButtonStyle"
+      android:layout_below="@id/heading_app_portfolio"
+      android:text="@string/spotify_streamer_projectName"
+      android:onClick="onProject1Click"/>
 
     <Button
-        android:id="@+id/project_name2"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/project_name1"
-        android:background="#F08C35"
-        android:text="@string/project_name2"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:layout_centerHorizontal="true"
-        android:padding="10dp"
-        android:onClick="onProject2Click"/>
+      android:id="@+id/scoresProjectButton"
+      style="@style/orangeButtonStyle"
+      android:layout_below="@id/spotifyStreamerButton"
+      android:text="@string/scores_projectName"
+      android:onClick="onProject2Click"/>
 
   <Button
-      android:id="@+id/project_name3"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/project_name2"
-      android:background="#F08C35"
-      android:text="@string/project_name3"
-      android:gravity="center"
-      android:layout_margin="10dp"
-      android:layout_centerHorizontal="true"
-      android:padding="10dp"
+      android:id="@+id/libraryProjectButton"
+      style="@style/orangeButtonStyle"
+      android:layout_below="@id/scoresProjectButton"
+      android:text="@string/library_projectName"
       android:onClick="onProject3Click"/>
 
   <Button
-      android:id="@+id/project_name4"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/project_name3"
-      android:background="#F08C35"
-      android:text="@string/project_name4"
-      android:gravity="center"
-      android:layout_margin="10dp"
-      android:layout_centerHorizontal="true"
-      android:padding="10dp"
+      android:id="@+id/buildItBiggerProjectButton"
+      style="@style/orangeButtonStyle"
+      android:layout_below="@id/libraryProjectButton"
+      android:text="@string/buildItBigger_projectName"
       android:onClick="onProject4Click"/>
 
   <Button
-      android:id="@+id/project_name5"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/project_name4"
-      android:background="#F08C35"
-      android:text="@string/project_name5"
-      android:gravity="center"
-      android:layout_margin="10dp"
-      android:layout_centerHorizontal="true"
-      android:padding="10dp"
+      android:id="@+id/xyzReaderProjectButton"
+      style="@style/orangeButtonStyle"
+      android:layout_below="@id/buildItBiggerProjectButton"
+      android:text="@string/xyzReader_projectName"
       android:onClick="onProject5Click"/>
 
   <Button
-      android:id="@+id/project_name6"
-      android:layout_width="200dp"
-      android:layout_height="wrap_content"
-      android:layout_below="@id/project_name5"
-      android:background="#f03541"
-      android:text="@string/project_name6"
-      android:gravity="center"
-      android:layout_margin="10dp"
-      android:layout_centerHorizontal="true"
-      android:padding="10dp"
+      android:id="@+id/capStoneProjectButton"
+      style="@style/orangeButtonStyle"
+      android:background="@color/pink"
+      android:layout_below="@id/xyzReaderProjectButton"
+      android:text="@string/capstone_projectName"
       android:onClick="onProject6Click"/>
 
 </RelativeLayout>
+</ScrollView>
